@@ -13,6 +13,7 @@ def read():
 def write():
     names = ["Facundo", "Miguel", "Pepe", "Chris"]
     with open("./my_files/names.txt", "w", encoding="utf-8") as f:
+        # Si coloco a en vez de w se hace append y no se sobreescribe
         for name in names: 
             f.write(name)
             f.write("\n")
